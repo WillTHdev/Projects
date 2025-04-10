@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Oswald:wght@200..700&family=Passion+One:wght@400;700;900&display=swap');
+
+        ::-webkit-scrollbar{
+            width: 0;
+            height: 0;
+        }
+        
+        *{
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes trans{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        #logindiv{
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 300px;
+            height: 350px;
+            border-radius: 50px 0px 50px 50px;
+            
+            animation: crescer 0.8s ease-out forwards;
+        }
+
+        @keyframes crescer{
+            from{
+                transform: translate(-50%, -50%);
+                top: 80%;
+                left: 50%;
+                opacity: 0;
+            }
+            to{
+                transform: translate(-50%, -50%);
+                opacity: 1;
+            }
+        }
+
+        h1{
+            text-align: center;
+            font-family: 'League Spartan';
+            padding: 10px;
+        }
+
+        p{
+            padding: 20px 20px 20px 20px;
+        }
+
+        .center{
+            margin-left: 23px;
+            border: 1px solid black;
+            width: 250px;
+            height: 25px;
+            border-radius: 10px;
+        }
+
+        #submit_button{
+            margin: auto;
+            padding: 20px;
+            width: 100px
+        }
+
+        #register{
+            padding: 0;
+            font-size: 0.8em;
+            text-align: center;
+        }
+
+        #logodiv{
+            display: inline-block;
+            position: absolute;
+            top: 17%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #logo{
+            width: 70px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div id="container">
+            <div id="logodiv"><img src="imgs/LOGO.png" alt="Logo" id="logo"></div>
+
+            <div id="logindiv">
+                <h1>Login</h1>
+                <p><label for="email">email</label></p>
+                <div><input type="email" name="email" id="email" class="center"></div>
+
+                <p><label for="senha">senha</label></p>
+                <div><input type="password" name="senha" id="senha" class="center"></div>
+
+                <div id="submit_button"><input type="submit" value="Login" id="ButtonS"></div>
+
+                <p id="register">não possui uma conta? <a href="cadastro.html">registre-se</a></p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
