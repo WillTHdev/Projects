@@ -17,7 +17,9 @@ body{
     background-size: cover;
     border-radius: 50px;
     width: 25%;
+    min-width: 400px;
     height: 80%;
+    min-height: 500px;
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
 
     animation: in 0.5s ease-in-out forwards;
