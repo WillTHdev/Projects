@@ -204,10 +204,6 @@ a:hover{
     font-weight: 400;
 }
 
-main{
-    z-index: 1;
-}
-
-video{
+main, video, #DivP{
     z-index: 1;
 }
