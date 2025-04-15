@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Passion+One:wght@400;700;900&display=swap');
+
+body::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+#logo{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 4%;
+    left: 12%;
+    width: 120px;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    background-color: white;
+    width: 100vw;
+    height: 6%;
+    padding: 8px 0px 8px 0px;
+}
+
+nav{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 3.8%;
+    left: 63%;
+    width: 60%;
+    text-align: center;
+}
+
+#background1, #background2, #background3, #background4{
+    display: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 28%;
+    left: 50%;
+    background-image: linear-gradient(to bottom, rgb(88,88,88), rgba(88,88,88,0.5));
+    backdrop-filter: blur(20px);
+    width: 100vw;
+    height: 400px;
+    text-align: center;
+
+    animation: abaixar 0.4s ease-in-out forwards;
+}
+
+@keyframes abaixar{
+    from{
+        top: 25%;
+        opacity: 0;
+    }
+    to{
+        top: 28%;
+        opacity: 1;
+    }
+}
+
+#background1:hover, #background2:hover, #background3:hover, #background4:hover{
+    display: inline-block;
+}
+
+#background2 > .txt{
+    width: 300px;
+}
+
+#background3 > .txt{
+    width: 350px;
+}
+
+#background4 > .txt{
+    width: 360px;
+}
+
+.txt{
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Inter';
+    font-size: 1.4em;
+    width: 200px;
+    line-height: 40px;
+    text-align: left;
+    margin: 0% 3.5% 0% 3.5%;
+
+    animation: abaixartxt 0.4s ease-in-out forwards;
+
+}
+
+@keyframes abaixartxt{
+    from{
+        scale: 0.96;
+    }
+    to{
+        scale: 1;
+    }
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    color: rgb(255, 136, 0);
+}
+
+.txt > p{
+    color: white;
+}
+
+.buttontxt{
+    font-family: 'Inter';
+    font-weight: 600;
+    color: black;
+    font-size: 1.4em;
+    background-color: transparent;
+    border: 0px;
+    padding: 0px 10px 0px 10px;
+    height: 50px;
+}
+
+.buttontxt:hover{
+    color: rgb(255, 136, 0);
+}
+
+.bggray{
+    background-color: rgb(88, 88, 88);
+}
+
+#divacessar{
+    display: inline-block;
+    position: absolute;
+    top: 4.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+}
+
+#buttonacessar{
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 1.4em;
+    background-color: rgb(255, 136, 0);
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    border: 0px;
+}
+
+#buttonacessar:hover{
+    background-color: rgb(233, 124, 0);
+}
+
+#buttoncadastrar{
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 1.4em;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 136, 0);
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    border: 0px;
+}
+
+#buttoncadastrar:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+.videos{
+    width: 100vw;
+    height: 91.9vh;
+}
+
+.PCenter{
+    font-family: 'Outfit';
+    font-size: 6em;
+    color: rgb(14, 14, 14);
+    margin: 0;
+}
+
+#PBaixo{
+    font-weight: bolder;
+}
+
+#DivP{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 34%;
+}
+
+#Pa{
+    color: rgb(14, 14, 14);
+    text-decoration: none;
+    font-size: 3em;
+    font-family: 'Outfit';
+    font-weight: 400;
+}

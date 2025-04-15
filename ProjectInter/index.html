@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header" class="bgnormal">
+        <img src="InterTrans.png" alt="" id="logo">
+        <nav>
+            <input type="button" value="Finanças" class="buttontxt" id="finanças">
+
+            <input type="button" value="Shopping" class="buttontxt" id="shopping">
+
+            <input type="button" value="Loop" class="buttontxt" id="loop">
+
+            <input type="button" value="Experiências" class="buttontxt" id="experiencias">
+
+            <input type="button" value="Vida global" class="buttontxt" id="vidaglobal">
+
+            <input type="submit" value="Abra sua conta" id="buttoncadastrar">
+            <input type="submit" value="Acesse sua conta" id="buttonacessar">
+        </nav>
+
+        <div id="background1" onmouseover="HeaderActive()" onmouseleave="financasclose()">
+            <div class="txt">
+                <p>Abra sua conta</p>
+
+                <a href="">Conta Digital</a> <br>
+                <a href="">Conta Kids</a> <br>
+                <a href="">Cartão de Crédito</a>
+            </div>
+
+            <div class="txt">
+                <p>Planeje seu futuro</p>
+
+                <a href="">Empréstimos e Financiamentos</a> <br>
+                <a href="">Antecipação de FGTS</a> <br>
+                <a href="">Consórcios</a> <br>
+                <a href="">Seguros</a>
+            </div>
+
+            <div class="txt">
+                <p>Comece a investir</p>
+
+                <a href="">Meu Porquinho</a> <br>
+                <a href="">Criptomoedas</a> <br>
+                <a href="">CDB</a> <br>
+                <a href="">Investimentos</a>
+            </div>
+
+            <div class="txt">
+                <p>Para o seu negócio</p>
+
+                <a href="">Conta PJ</a> <br>
+                <a href="">Conta MEI</a> <br>
+                <a href="">Empréstimo para empresas</a> <br>
+                <a href="">Maquininha de cartão</a>
+            </div>
+        </div>
+
+        <div id="background2" onmouseover="HeaderActive()" onmouseleave="shoppingclose()">
+            <div class="txt">
+                <p>Simplifique suas compras</p>
+                <a href="">Comprar no Shopping</a>
+                <a href="">Crediário Digital</a>
+            </div>
+        </div>
+
+        <div id="background3" onmouseleave="experienciasclose()">
+            <div class="txt">
+                <p>Tudo para o seu dia a dia</p>
+
+                <a href="">Passagens e Hospedagens</a> <br>
+                <a href="">Duo Gourmet</a> <br>
+                <a href="">Recarga</a> <br>
+                <a href="">Gift Card</a> <br>
+                <a href="">Plano de Celular</a> <br>
+                <a href="">Shell Box</a>
+            </div>
+        </div>
+
+        <div id="background4" onmouseleave="vidaglobalclose()">
+            <div class="txt">
+                <p>Abra sua conta</p>
+
+                <a href="">Global Account</a> <br>
+                <a href="">Global Account Business</a>
+            </div>
+
+            <div class="txt">
+                <p>Simplifique suas transações</p>
+
+                <a href="">Câmbio</a> <br>
+                <a href="">Google Adsense</a>
+            </div>
+
+            <div class="txt">
+                <p>Comece a investir</p>
+
+                <a href="">Investir no Exterior</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="DivP">
+            <p class="PCenter">Escolha inteligente.</p>
+            <p class="PCenter" id="PBaixo">Escolha inter.</p>
+            <a href="#" id="Pa">Conhecer &rarr;</a>
+        </div>
+        <video src="videos/video1.webm" autoplay muted loop class="videos"></video>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
