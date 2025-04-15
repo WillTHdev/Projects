@@ -28,6 +28,10 @@ header{
     padding: 8px 0px 8px 0px;
 }
 
+header *{
+    z-index: 10;
+}
+
 nav{
     position: absolute;
     transform: translate(-50%, -50%);
@@ -204,6 +208,6 @@ a:hover{
     font-weight: 400;
 }
 
-main, video, #DivP{
+main *{
     z-index: 1;
 }
