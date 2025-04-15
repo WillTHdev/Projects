@@ -27,10 +27,14 @@ financas.addEventListener('mouseover', function(){
     HeaderActive()
 })
 
-function financasclose(){
+function back1Open(){
+    background1.style.display = 'inline-block'
+}
+
+background1.addEventListener('mouseleave', function(){
     background1.style.display = 'none'
     HeaderOff()
-}
+})
 
 shopping.addEventListener('mouseover', function(){
     background1.style.display = 'none'
@@ -40,12 +44,12 @@ shopping.addEventListener('mouseover', function(){
     HeaderActive()
 })
 
-function shoppingclose(){
+background2.addEventListener('mouseleave', function(){
     background2.style.display = 'none'
     HeaderOff()
-}
+})
 
-experiencias.addEventListener('mouseover', function(){
+experiencias.addEventListener('mouseenter', function(){
     background1.style.display = 'none'
     background2.style.display = 'none'
     background3.style.display = 'inline-block'
@@ -53,10 +57,10 @@ experiencias.addEventListener('mouseover', function(){
     HeaderActive()
 })
 
-function experienciasclose(){
+background3.addEventListener('mouseleave', function(){
     background3.style.display = 'none'
     HeaderOff()
-}
+})
 
 vidaglobal.addEventListener('mouseover', function(){
     background1.style.display = 'none'
@@ -66,10 +70,10 @@ vidaglobal.addEventListener('mouseover', function(){
     HeaderActive()
 })
 
-function vidaglobalclose(){
+background4.addEventListener('mouseleave', function(){
     background4.style.display = 'none'
     HeaderOff()
-}
+})
 
 looptxt.addEventListener('mouseenter', function(){
     shoppingclose()
