@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="headerhidden" id="header">
+        <h1>Pomodoro</h1>
+        <button id="buttonSettings">⚙️ Configurações</button>
+    </header>
+
+    <div id="center">
+        <h1>Pomodoro</h1>
+    </div>
+
+    <main class="mainhidden" id="main">
+        <div id="Timerdisplay">25:00</div>
+        <div class="controls">
+            <button id="buttonControls">START</button>
+            <button id="buttonReset" class="hidden">RESET</button>
+        </div>
+    </main>
+
+    <div class="modal chidden" id="settingsModal">
+        <div class="SettingsDisplay">
+            <p>
+                <label for="StudyNumber">Study Time (Minutes)</label><input type="number" name="studytimeinput" id="StudyNumber" class="NumbersInput">
+            </p>
+            <p>
+                <label for="BreakNumber">Break Time (Minutes)</label><input type="number" name="breaktimeinput" id="BreakNumber" class="NumbersInput">
+            </p>
+            <p>
+                <input type="button" value="SAVE" id="ButtonSave">
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

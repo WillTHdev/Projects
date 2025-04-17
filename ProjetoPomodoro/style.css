@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Passion+One:wght@400;700;900&display=swap');
+
+body{
+    margin: 0;
+    height: 100vh;
+    font-family: 'Outfit';
+    background-color: rgb(255, 120, 120);
+}
+
+#center{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 5em;
+    cursor: pointer;
+}
+
+.animcenter{
+    animation: sumir 1s ease-out;
+}
+
+@keyframes sumir{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+header{
+    background-color: rgb(182, 1, 1);
+    margin: 0;
+    height: 100px;
+
+    animation: aparecerheader 1s ease-in-out;
+}
+
+@keyframes aparecerheader{
+    0%{
+        opacity: 0;
+        height: 0px;
+    }
+    100%{
+        opacity: 1;
+        height: 100px;
+    }
+}
+
+.headerhidden{
+    display: none;
+}
+
+h1{
+    margin: 0;
+    padding: 25px 20px;
+    color: white;
+}
+
+#buttonSettings{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 5%;
+    left: 85%;
+    color: white;
+    font-size: 1.2em;
+}
+
+button{
+    background-color: rgba(95, 6, 6, 0.5);
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.mainhidden{
+    display: none;
+}
+
+main{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    width: 60%;
+    height: 60%;
+    border-radius: 50px;
+
+    animation: aparecer 1s ease-in-out;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        width: 40%;
+        height: 40%;
+    }
+    60%{
+        opacity: 1;
+        width: 62%;
+        height: 62%;
+    }
+    100%{
+        opacity: 1;
+        width: 60%;
+        height: 60%;
+    }
+}
+
+#Timerdisplay{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 50%;
+
+    margin: 40px 0;
+    font-size: 8em;
+    color: white;
+}
+
+.controls{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 65%;
+    left: 50%;
+}
+
+#buttonControls{
+    padding: 20px 40px;
+    color: white;
+    font-size: 1.5em;
+    box-shadow: 0px 10px 0px rgb(61, 0, 0);
+}
+
+#buttonReset{
+    padding: 20px 40px;
+    color: white;
+    font-size: 1.5em;
+    box-shadow: 0px 10px 0px rgb(61, 0, 0);
+}
+
+.hidden{
+    display: none;
+}
+
+.SettingsDisplay{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    font-size: 1.3em;
+    border-radius: 20px;
+}
+
+p{
+    text-align: center;
+}
+
+.NumbersInput{
+    width: 80%;
+    font-size: 0.9em;   
+}
+
+#ButtonSave{
+    background-color: brown;
+    border-radius: 20px;
+    border: 0px;
+    width: 40%;
+    height: 40px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal.chidden{
+    display: none;
+}
