@@ -22,7 +22,7 @@ divCenter.addEventListener('click', function(){
     main.classList.remove('mainhidden')
     main.sca-
     header.classList.remove('headerhidden')
-    divCenter.classList.add('animcenter')
+    divCenter.remove()
 })
 
 function UptadeDisplay(){
