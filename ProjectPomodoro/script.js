@@ -35,7 +35,7 @@ function StartTimer(){
     if (!running){
         running = true
         
-        Button.innerHTML = IniciarTxt
+        Button.innerHTML = PauseTxt
         ButtonReset.classList.remove('hidden')
 
         timer = setInterval(function(){
@@ -56,7 +56,7 @@ function StartTimer(){
     }else{
         clearInterval(timer)
         running = false
-        Button.innerHTML = PauseTxt
+        Button.innerHTML = IniciarTxt
     }
 }
 
