@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --CorDestaque: #EC7F19;
+    --CorDestaque-Hover: #e88f3c;
+    --CorMenu: #464646;
+}
+
+Header{
+    position: fixed;
+    background-color: white;
+    padding: 10px;
+    z-index: 10;
+}
+
+body{
+    background-color: black;
+    z-index: 1;
+}
+
+.LogoImagem{
+    position: fixed;
+    left: 5%;
+    width: 120px;
+    object-fit: contain;
+}
+
+nav{
+    display: flex;
+    gap: 0.55rem;
+    padding: 0px 60px 0px 0px;
+    justify-content: right;
+    z-index: 10;
+}
+
+.Buttons-normal, .Button-Cadastrar, .Button-Login{
+    font: 600 1.05em 'Inter';
+}
+
+.Buttons-normal{
+    border: none;
+    background-color: transparent;
+    color: rgb(21, 21, 21);
+    padding: 10px;
+}
+
+.Buttons-normal:hover{
+    color: var(--CorDestaque);
+}
+
+.Button-Cadastrar, .Button-Login{
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.Button-Cadastrar{
+    background-color: white;
+    color: var(--CorDestaque);
+}
+
+.Button-Login{
+    background-color: var(--CorDestaque);
+    color: white;
+}
+
+.Button-Login:hover{
+    background-color: var(--CorDestaque-Hover);
+}
+
+.Menu-nav{
+    display: block;
+    background-color: rgba(128, 128, 128, 0.5);
+    backdrop-filter: blur(2px);
+}
+
+@media (max-width: 1100px){
+    nav .Button-Cadastrar, .Button-Login, .Buttons-normal{
+        display: none;
+    }
+    .Button-Menu-Nav{
+        background-color: transparent;
+        border: none;
+    }
+    .Button-Menu{
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+    }
+    header{
+        background-color: var(--CorMenu);
+    }
+}
+
+@media (min-width: 1100px){
+    .Button-Menu-Nav{
+        display: none;
+    }
+}
+
+.Backgrounds{
+    display: flex;
+    position: fixed;
+    visibility: hidden;
+    top: 3%;
+    justify-content: center;
+    z-index: 9;
+
+    width: 100%;
+    background-image: linear-gradient(to bottom, #464646, #3030308e);
+    backdrop-filter: blur(3px);
+}
+
+.AnimDescerMenus{
+    animation: DescerMenus .4s ease-in-out forwards;
+}
+
+@keyframes DescerMenus{
+    from{
+        visibility: hidden;
+        opacity: 0;
+        scale: 0.99;
+        transition: .6s;
+        top: 6%;
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+        scale: 1;
+        transition: .6s;
+        top: 9%;
+    }
+}
+
+.Backgrounds div{
+    padding: 30px;
+}
+
+.txt{
+    width: 300px;
+    line-height: 40px;
+}
+
+.P-Menu{
+    font: normal 1.08em 'Inter';
+    color: white;
+}
+
+.A-Menu{
+    font: bold 1.08em 'Inter';
+    color: white;
+    text-decoration: none;
+}
+
+.Video1{
+    display: flex;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+#Video-Principal{
+    object-fit: contain;
+    width: 90%;
+}
