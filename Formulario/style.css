@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --Cor01: #842cdb3a;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99vh;
+    overflow: hidden;
+
+    background-image: url('Imgs/editada.jpg');
+    background-size: cover;
+    background-position: top top;
+}
+
+.Container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 60%;
+    height: 80%;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-200px, 25px);
+}
+
+.Space-Inputs {
+    margin: 3px 0px 3px 0px;
+}
+
+.Inputs {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px 0px 10px 0px;
+    width: 200px;
+    background-color: var(--Cor01);
+}
+
+.Inputs::placeholder {
+    font: normal 1em 'Inter';
+}
+
+.Inputs-Cadastro {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 75%;
+    border-radius: 100px 20px 20px 100px;
+    display: flex;
+    background-color: purple;
+    width: 50%;
+    height: 100%;
+
+    transition: 1s;
+}
+
+label {
+    font: bold 1.2em 'League Spartan';
+}
+
+h1 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 18%;
+    left: 25%;
+    font: bold 2.2em 'League Spartan';
+}
+
+.Login-Icons {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 25%;
+}
+
+.Img-Icons {
+    width: 30px;
+    transition: .5s;
+}
+
+.Img-Icons:hover {
+    scale: 1.06;
+}
+
+.Btn-Icons {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+p {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 68%;
+    left: 25%;
+    font: bold 0.8em 'Inter';
+    cursor: pointer;
+}
+
+.Input-Submit {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 85%;
+    left: 25%;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, rgb(168, 0, 168), purple);
+    color: white;
+    font: bold 1.5em 'League Spartan';
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.Input-Submit:hover {
+    transform: translate(-66.5px, -22.5px) scale(1.02);
+}
+
+.h1-Cadastro {
+    background: linear-gradient(120deg, #FFFFFF 0%, #a0a0a0 50%, #FFFFFF 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translate(-8%, 50px);
+    font: bold 2.5em 'Inter';
+    width: 300px;
+    transition: 1s;
+
+    animation: Brilho 2s ease-in-out infinite;
+}
+
+.Button-SingUp {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 75%;
+    left: 40%;
+    background: linear-gradient(120deg, white 0%, rgb(255, 186, 255) 50%, white 100%);
+    background-size: 200% auto;
+    background-position: 0% 0;
+    opacity: 0;
+
+    border-radius: 20px;
+    border: none;
+
+    padding: 15px 25px;
+    font: bold 2em 'league spartan';
+    color: rgb(59, 0, 59);
+
+    cursor: pointer;
+
+    scale: .5;
+    transition: 1s;
+
+    animation: BrilhoButton 5s ease-in-out infinite;
+}
+
+@keyframes Brilho {
+    from {
+        background-position: 100% 0;
+    }
+
+    to {
+        background-position: -100% 0;
+    }
+}
+
+@keyframes BrilhoButton {
+    from {
+        background-position: 100% 0;
+    }
+
+    to {
+        background-position: -100% 0;
+    }
+}
+
+/* CadastroDiv */
+
+.ContainerRgt {
+    pointer-events: none;
+
+    position: absolute;
+    transform: translate(-65%, -65%);
+    top: 50%;
+    left: 75%;
+
+    height: 100%;
+    width: 50%;
+
+    opacity: 0;
+    scale: .8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: 1s;
+}
+
+.ContainerRgt > h1 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 8%;
+    left: 50%;
+    text-align: center;
+}
+
+.ContainerRgt > .Login-Logos {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 24%;
+    left: 50%;
+
+    display: flex;
+    gap: 20px;
+}
+
+.InputRgt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(1%, 25px);
+}
+
+.Input-Submit-Cadastro {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 88%;
+    left: 50%;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, rgb(168, 0, 168), purple);
+    color: white;
+    font: bold 1.5em 'League Spartan';
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.Input-Submit-Cadastro:hover {
+    transform: translate(-70.5px, -22.5px) scale(1.02);
+}
