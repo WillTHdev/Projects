@@ -232,14 +232,17 @@ hr {
     height: 50px;
 }
 
-#SingUpMobile{
+#SingUpMobile {
+    display: none;
+
     background-image: linear-gradient(120deg, white, rgb(190, 190, 190), white);
 
     padding: 10px;
     border-radius: 100px;
     border: 2px solid rgb(0, 0, 0);
-    box-shadow: 0px 5px 10px rgb(72, 0, 82);
+    box-shadow: 0px 5px 10px rgba(73, 0, 82, 0.356);
     font: bold 0.75em 'Inter';
+    margin-top: 20px;
 }
 
 /* Responsividade */
@@ -329,7 +332,7 @@ hr {
         background-color: purple;
 
         height: 100%;
-        width: 50%;
+        width: 100%;
 
         border-radius: 50px 0px;
         box-shadow: 0px 0px 10px black;
@@ -338,10 +341,12 @@ hr {
     }
 
     #Divisao_Right_to_SingUp {
-        display: none;
+        display: inline-block;
+
+        visibility: hidden;
 
         position: absolute;
-        transform: scale(0.9) translate(0, -58%);
+        transform: translate(-50%, -50%);
         top: 50%;
         left: 50%;
 
@@ -351,7 +356,7 @@ hr {
         font: bold 1.5em 'League Spartan';
 
         height: 100%;
-        width: 50%;
+        width: 100%;
 
         border-radius: 50px 0px;
 
@@ -373,5 +378,31 @@ hr {
         border-radius: 50px 0px;
 
         z-index: 1;
+    }
+
+    .Animation-Hidden-Mobile{
+        animation: HiddenDiv 1s forwards;
+    }
+
+    @keyframes HiddenDiv {
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    #SingUpMobile {
+        display: inline-block;
+
+        background-image: linear-gradient(120deg, white, rgb(190, 190, 190), white);
+
+        padding: 10px;
+        border-radius: 100px;
+        border: 2px solid rgb(0, 0, 0);
+        box-shadow: 0px 5px 10px rgba(73, 0, 82, 0.356);
+        font: bold 0.75em 'Inter';
+        margin-top: 20px;
     }
 }

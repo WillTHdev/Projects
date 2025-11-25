@@ -1,4 +1,5 @@
 const button = document.getElementById("ButtonSingUp")
+const buttonMobile = document.getElementById("SingUpMobile")
 let DivLeft = document.getElementById('Divisao_Left')
 let DivRight = document.getElementById('Divisao_Right')
 let DivSingUp = document.getElementById('Divisao_Right_to_SingUp')
@@ -36,4 +37,12 @@ button.addEventListener('click', function(){
         }, 1000)
     }
     Choose = !Choose
+})
+
+buttonMobile.addEventListener("click", function(){
+    DivLeft.classList.toggle("Animation-Hidden-Mobile")
+    DivLeft.addEventListener("animationend", function(){
+        DivLeft.style.visibility = 'Hidden'
+        DivSingUp.style.visibility = 'Visible'
+    }, {once: true})
 })
