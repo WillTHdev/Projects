@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="Principal">
+        <div id="Divisao_Left">
+            <h1>LOGIN</h1>
+
+            <div class="Div-Form">
+                <form action="server.php" method="post">
+                    <div class="Div-Input">
+                        <label for="UserEmail">Email: </label>
+                        <input type="email" name="UserEmail" id="UserEmail" class="Style-Input" placeholder="joao@exemple.com" maxlength="50">
+                    </div>
+
+                    <div class="Div-Input">
+                        <label for="UserPassword">Password: </label>
+                        <input type="password" name="UserPassword" id="UserPassword" class="Style-Input" minlength="4" maxlength="20">
+                    </div>
+
+                    <div class="Div-Input">
+                        <input type="submit" value="Sing in" class="Style-Submit">
+                    </div>
+                </form>
+            </div>
+
+            <hr>
+
+            <div id="center">
+                <a href="#" id="Fgt-pswd">Forgot your password?</a>
+            </div>
+        </div>
+
+        <div id="Divisao_Right">
+            <div id="center-divR">
+                <h1 id="TextDivRight">
+                    DON'T YOU HAVE AN ACCOUNT?
+                </h1>
+                <button id="ButtonSingUp">REGISTER</button>
+            </div>
+            
+        </div>
+
+        <div id="Divisao_Right_to_SingUp">
+            <h1>REGISTER</h1>
+
+            <div class="Div-Form">
+                <form action="server.php" method="post">
+                    <div class="Div-Input">
+                        <label for="SingupName">Name: </label>
+                        <input type="email" name="SingupName" id="SingupName" class="Style-Input" placeholder="joao martins" maxlength="50">
+                    </div>
+
+                    <div class="Div-Input">
+                        <label for="SingupEmail">Email: </label>
+                        <input type="email" name="SingupEmail" id="SingupEmail" class="Style-Input" placeholder="joao@exemple.com" maxlength="50">
+                    </div>
+
+                    <div class="Div-Input">
+                        <label for="SingupPassword">Password: </label>
+                        <input type="password" name="SingupPassword" id="SingupPassword" class="Style-Input" minlength="4" maxlength="20">
+                    </div>
+
+                    <div class="Div-Input">
+                        <input type="submit" value="Sing Up" class="Style-Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="webInteraction.js"></script>
+</body>
+</html>
